@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+//TODO: 로그인 창 액티비티 제거
         super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_main);
 
