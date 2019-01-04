@@ -212,6 +212,12 @@ public class CardFragment extends Fragment {
             mSetRightOut.start();
             mSetLeftIn.start();
             mIsBackVisible = true;
+            if (strUri != null) {
+                if(strUri.contains(".mp4")){
+                    userVideo.setVisibility(VISIBLE);
+                    userVideo.start();
+                }
+            }
         } else {
             mSetRightOut.setTarget(mCardBackLayout);
             mSetLeftIn.setTarget(mCardFrontLayout);
