@@ -37,6 +37,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Login"
+        android:background="#808080"
         android:layout_marginTop="20dp"
         android:textColor="@android:color/white"
         />
@@ -45,13 +46,18 @@
         android:id="@+id/btn_facebook"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:background="#FF0079FF"
+        android:paddingTop="5dp"
         android:text="facebook login"
         android:textColor="@android:color/white" />
-    <Button android:id="@+id/btn_link_signup"
+
+    <Button
+        android:id="@+id/btn_link_signup"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="DON't have an account yet register!"
-        android:background="@null"
+        android:layout_margin=''
         android:layout_marginTop="3dp"
-        android:textColor="@android:color/black"/>
+        android:background="@null"
+        android:text="DON't have an account yet register!"
+        android:textColor="@android:color/black" />
 </LinearLayout>

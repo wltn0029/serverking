@@ -22,7 +22,7 @@ import org.json.JSONObject;
 
 import java.util.Currency;
 
-public abstract class OpenActivity extends AppCompatActivity {
+public class OpenActivity extends AppCompatActivity {
     private static final String KEY_STATUS = "status";
     private static final String KEY_MESSAGE = "message";
     private static final String KEY_FULL_NAME = "full_name";

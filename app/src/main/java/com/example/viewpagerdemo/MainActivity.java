@@ -160,12 +160,9 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //open login activity first
-        Intent intent = new Intent(this,OpenActivity.class);
-        startActivity(intent);
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+       setContentView(R.layout.activity_main);
 
         items = new ArrayList<String>();
         dataList = new ArrayList<Map<String, String>>();
@@ -211,6 +208,10 @@ public class MainActivity extends AppCompatActivity
                 }
             }
         }
+
+        //open login activity first
+        Intent intent = new Intent(this,OpenActivity.class);
+        startActivity(intent);
 
     }
 
