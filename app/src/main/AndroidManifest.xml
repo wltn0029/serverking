@@ -21,15 +21,21 @@
         android:hardwareAccelerated="false"
         android:largeHeap="true"
         android:theme="@style/AppTheme">
-
-        <activity
-            android:name=".MainActivity"
-            android:windowSoftInputMode="adjustResize">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider297905977524713"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+        <activity android:name=".GoogleLoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustResize">
+
         </activity>
         <provider
             android:name="android.support.v4.content.FileProvider"
